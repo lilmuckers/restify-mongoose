@@ -312,10 +312,11 @@ Resource.prototype.detail = function (options) {
   options.modelName = options.modelName || this.options.modelName;
   options.populate = options.populate || this.options.populate;
   options.select = options.select || this.options.select;
+  options.queryString = options.queryString || this.options.queryString;
 
   return function (req, res, next) {
     var find = {};
-    find[self.options.queryString] = req.params.id;
+    find[options.queryString] = req.params.id;
 
     var query = self.Model.findOne(find);
 
