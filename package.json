@@ -1,7 +1,7 @@
 {
-  "name": "restify-mongoose",
-  "version": "1.0.0",
-  "description": "Expose mongoose models as REST resources",
+  "name": "restify-mongoose_lilmuckers",
+  "version": "1.0.1",
+  "description": "Expose mongoose models as REST resources - added some more projection options",
   "author": "christoph.walcher@gmail.com",
   "contributors": [
     {
@@ -46,9 +46,9 @@
     "should": "~9.0.2",
     "supertest": "~1.2.0"
   },
-  "bugs": "https://github.com/saintedlama/restify-mongoose/issues",
+  "bugs": "https://github.com/lilmuckers/restify-mongoose/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/saintedlama/restify-mongoose.git"
+    "url": "https://github.com/lilmuckers/restify-mongoose.git"
   }
 }
