@@ -315,7 +315,7 @@ Resource.prototype.detail = function (options) {
   options.queryString = options.queryString || this.options.queryString;
 
   return function (req, res, next) {
-    var find = {};
+    var find = req.query || {};
     find[options.queryString] = req.params.id;
 
     var query = self.Model.findOne(find);
